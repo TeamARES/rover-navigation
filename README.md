@@ -10,8 +10,11 @@
 
 3. Then launch the amcl node and give robot the initial pose
 
+- amcl is working fine
+
 4. Then launch the move-base node and move the robot from one point to another
 
+- this is not working fine , see in para-meters what is the problem!
 ## To do:
 
 1. use the maps of the turtlebot and try to run the amcl and move_base node on it
