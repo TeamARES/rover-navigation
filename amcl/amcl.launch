@@ -1,0 +1,25 @@
+<launch>
+<node name="amcl" pkg="amcl" type="amcl" output="screen">
+		<remap from="scan" to="/scan"/>
+        <remap from="map" to="/map"/>
+        <param name="odom_frame_id" value="odom"/>
+		<param name="odom_model_type" value="diff-corrected"/>
+		 <param name="use_map_topic" value="true"/>
+        <param name="base_frame_id" value="chassis"/>
+		<param name="global_frame_id" value="map"/>
+	    <param name="initial_pose_x" value="-2"/>
+		<param name="initial_pose_y" value="0.5"/>
+		<param name="initial_pose_z" value="0.2"/>
+		<param name="initial_pose_a" value="3.141"/>
+		<param name="min_particles" value="80"/>
+	    <param name="max_particles" value="5000"/>
+		<param name="update_min_d" value="0.1"/>
+		<!--<param name="update_min_a" value="3.141"/>-->
+		<!--<param name="laser_min_range" value="-1.0"/> -->
+		<param name="laser_max_range" value="-1.0" />       
+	 	<param name="laser_max_beams" value="100"/>
+		<param name="laser_z_hit" value="0.95"/> 
+		<param name="laser_z_rand" value="0.06"/>
+	
+</node>
+</launch>
