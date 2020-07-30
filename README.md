@@ -1,27 +1,27 @@
 # Full Autonomous Stack 
 
-### Process
+### Usage 
 
-1. Run the simulation
-2. Build a map through SLAM
-- To do 
-  - Quality of the map is not good!
-  - maybe need to use RTABMAP ros
+1. Go to the launch folder
+2. Launch all the simulation files
+```bash
+roslaunch sim.launch
+```
 
-3. Then launch the amcl node and give robot the initial pose
+3. Launch the depth to laser scanner
+```bash
+bash depth_laser.sh
+```
+4. Launch the map_server
+```bash
+cd map/tb_maps/maps/
+bash run.sh
+```
+5. Launch the entire nav stack
+```bash
+roslaunch nav.launch
+```
+### Output
 
-- amcl is working fine
-
-4. Then launch the move-base node and move the robot from one point to another
-
-- this is not working fine , see in para-meters what is the problem!
-## To do:
-
-1. use the maps of the turtlebot and try to run the amcl and move_base node on it
-
-- Will have to launch my robot in the turtlebot world
-- Use it's map and make the navigation work completely
-- If it works fine!
-
-2. Improve the maps by doing some modification to slam gampping or RTABMAP
-
+![output1](pics/output1.png)
+![output2](pics/output2.png)

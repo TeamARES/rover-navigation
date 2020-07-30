@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="/home/manan/catkin_ws/src/rover-navigation/amcl/amcl.launch">
+</include>
+<include file="/home/manan/catkin_ws/src/rover-navigation/move_base/move_base.launch">
+</include>
+</launch>

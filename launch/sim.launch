@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="/home/manan/catkin_ws/src/rover-navigation/simulation/fb.launch">
+</include>
+<include file="/home/manan/catkin_ws/src/rover-navigation/simulation/fb_rviz.launch">
+</include>
+</launch>
