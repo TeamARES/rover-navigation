@@ -14,7 +14,6 @@ bash depth_laser.sh
 ```
 4. Launch the map_server
 ```bash
-cd map/tb_maps/maps/
 bash run.sh
 ```
 5. Launch the entire nav stack
